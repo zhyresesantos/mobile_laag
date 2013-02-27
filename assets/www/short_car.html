@@ -1,0 +1,154 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="css/svg.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview-pull.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.iscrollview.js"></script>
+        <script type="text/javascript" src="js/dijkstra.js"></script>
+        <script type="text/javascript" src="js/graph_car.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu').hide();
+                $('.options').click(function () {
+                    $(this).toggleClass('active');
+                    $('.menu').toggle();
+                });
+            });
+            var myScroll;
+
+            function loaded() {
+                myScroll = new iScroll('wrapper', {
+                    zoom: true
+                });
+            }
+
+            document.addEventListener('touchmove', function (e) {
+                e.preventDefault();
+            }, false);
+
+            document.addEventListener('DOMContentLoaded', loaded, false);
+        </script>
+    </head>
+    
+    <body>
+        <header>
+        <div class="header">
+                <div class="title">
+                    <a class="msuiit-logo" href="/index.php" title="MSU-IIT Home">
+                        <img src="images/iit-logo.gif" alt="MSU-IIT logo" />
+                    </a>
+                     <h1>Iligan Institute of Technology</h1>
+
+                     <h2>of the Mindanao State University</h2>
+
+                     <h3>Quality Education for a Better Mindanao</h3>
+
+                </div>
+            </div>
+            <div class="options">
+                <ul>
+                    <li>Menu</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="map.html">360 Panoramic Tour</a>
+                    </li>
+                    <li>
+                        <a href="short_car.html">Shortest Path By Car</a>
+                    </li>
+                    <li>
+                        <a href="short_walk.html">Shortest Path By Walk</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="tabs-2">
+            <p id="d">Distance:</p>
+            <div id="wrapper">
+                <div id="scroller">
+                    <div style="overflow:hidden;width:1000px;height:500px;position:relative;">
+                        <div id="dijk">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgElement" currentScale="1" width="800px" height="600px" viewBox="0 0 800 600" onload="init(evt)">
+                                <g id="viewport"></g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form style="height:140px;">FROM:
+                <div class="styled">
+                    <select id="from">
+                        <option></option>
+                        <option>Main Gate</option>
+                        <option>Multi-Purpose Hall</option>
+                        <option>Main Library</option>
+                        <option>Administration Building</option>
+                        <option>Exit Gate</option>
+                        <option>Integrated Development Schoool</option>
+                        <option>Hostel</option>
+                        <option>Clinic</option>
+                        <option>School of Computer Studies</option>
+                        <option>College of Science and Mathematics</option>
+                        <option>College of Arts ans Social Sciences</option>
+                        <option>Industrial Automation Control Engineering Technology</option>
+                        <option>College of Bussiness Administration and Accountancy</option>
+                        <option>School of Engineering Technology</option>
+                        <option>College of Engineering</option>
+                        <option>Gymnasium</option>
+                        <option>Coop Academy</option>
+                        <option>Supplies Office</option>
+                        <option>College of Education</option>
+                        <option>Twin Court</option>
+                        <option>Volleyball Feild</option>
+                        <option>ROTC Field</option>
+                        <option>Bahay Alumni</option>
+                    </select>
+                </div>
+                </br>TO:
+                <div class="styled">
+                    <select id="to">
+                        <option></option>
+                        <option>Main Gate</option>
+                        <option>Multi-Purpose Hall</option>
+                        <option>Main Library</option>
+                        <option>Administration Building</option>
+                        <option>Exit Gate</option>
+                        <option>Integrated Development Schoool</option>
+                        <option>Hostel</option>
+                        <option>Clinic</option>
+                        <option>School of Computer Studies</option>
+                        <option>College of Science and Mathematics</option>
+                        <option>College of Arts ans Social Sciences</option>
+                        <option>Industrial Automation Control Engineering Technology</option>
+                        <option>College of Bussiness Administration and Accountancy</option>
+                        <option>School of Engineering Technology</option>
+                        <option>College of Engineering</option>
+                        <option>Gymnasium</option>
+                        <option>Coop Academy</option>
+                        <option>Supplies Office</option>
+                        <option>College of Education</option>
+                        <option>Twin Court</option>
+                        <option>Volleyball Feild</option>
+                        <option>ROTC Field</option>
+                        <option>Bahay Alumni</option>
+                    </select>
+                </div>
+                </br>
+                <input type="button" value="Find Route" id="find" class="css-button" />
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2012 &bull; The Mobile IIT Virtual Tour Project &bull;</p>
+        </footer>
+    </body>
+
+</html>

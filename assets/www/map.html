@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview-pull.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
+        <script type="text/javascript" src="js/jquery.reel-min.js"></script>
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.iscrollview.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="header">
+                <div class="title">
+                    <a class="msuiit-logo" href="/index.php" title="MSU-IIT Home">
+                        <img src="images/iit-logo.gif" alt="MSU-IIT logo" />
+                    </a>
+                     <h1>Iligan Institute of Technology</h1>
+
+                     <h2>of the Mindanao State University</h2>
+
+                     <h3>Quality Education for a Better Mindanao</h3>
+
+                </div>
+            </div>
+            <div class="options">
+                <ul>
+                    <li>Menu</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="map.html">360 Panoramic Tour</a>
+                    </li>
+                    <li>
+                        <a href="short_car.html">Shortest Path By Car</a>
+                    </li>
+                    <li>
+                        <a href="short_walk.html">Shortest Path By Walk</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="wrapper">
+            <div id="scroller">
+                <div style="overflow:hidden;width:1000px;height:500px;position:relative;">
+                    <img usemap="#map" alt="map" id="imagemap" src="images/map.jpeg" width="720" height="480" />
+                    <map id="map" name="map">
+                        <area shape="poly" name="maingate" coords="156,403,159,393,162,386,163,381,157,377,149,381,151,388,154,395" href="#two">
+                        <!-- maingate -->
+                        <area shape="poly" name="clinic" coords="224,363,227,352,230,343,225,338,219,339,216,343,219,351,221,357" href="#two">
+                        <!-- clinic -->
+                        <area shape="poly" name="scs" coords="276,376,279,365,282,357,280,351,275,350,270,352,269,355,272,364" href="#two">
+                        <!-- scs -->
+                        <area shape="poly" name="csm" coords="406,361,409,348,413,341,411,336,406,333,400,335,398,340,402,349" href="#two">
+                        <!-- csm -->
+                        <area shape="poly" name="gym" coords="504,301,508,289,512,280,509,274,503,272,499,274,496,279,499,285" href="#two">
+                        <!-- gym -->
+                        <area shape="poly" name="coop" coords="587,313,591,301,595,293,592,287,587,285,582,287,579,291,582,299" href="#two">
+                        <!-- coop -->
+                        <area shape="poly" name="twincourt" coords="560,196,563,187,567,179,566,173,560,169,554,171,552,176,555,183" href="#">
+                        <!-- twincourt -->
+                        <area shape="poly" name="alumni" coords="661,162,666,152,669,142,667,137,661,135,655,137,653,141,656,149" href="#">
+                        <!-- alumni -->
+                        <area shape="poly" name="field" coords="594,114,598,101,602,92,598,87,593,85,588,87,586,92,589,99" href="#">
+                        <!-- field -->
+                        <area shape="poly" name="volleyball" coords="504,142,508,130,512,121,509,115,504,113,499,115,496,120,499,128" href="#">
+                        <!-- volleyball -->
+                        <area shape="poly" name="mainlib" coords="181,333,185,322,189,311,186,306,181,304,176,306,173,310,177,318" href="#">
+                        <!-- mainlib -->
+                        <area shape="poly" name="admin" coords="101,317,104,306,108,297,106,291,100,289,94,291,92,296,95,303" href="#">
+                        <!-- admin -->
+                        <area shape="poly" name="mph" coords="175,281,180,268,183,259,181,254,175,252,169,254,167,257,170,264" href="#">
+                        <!-- mph -->
+                        <area shape="poly" name="ids" coords="172,229,176,217,180,208,177,202,171,200,166,203,164,207,166,214" href="#">
+                        <!-- ids -->
+                        <area shape="poly" name="hostel" coords="124,195,128,183,132,174,129,168,124,167,118,168,116,173,119,180" href="#">
+                        <!-- hostel -->
+                        <area shape="poly" name="cass" coords="251,138,256,126,260,117,257,111,252,109,246,110,244,115,247,123" href="#">
+                        <!-- cass -->
+                        <area shape="poly" name="ced" coords="504,198,508,186,512,177,509,172,504,169,498,172,496,177,499,184" href="#">
+                        <!-- ced -->
+                        <area shape="poly" name="supplyoffice" coords="459,195,463,184,467,174,464,168,459,166,454,168,451,172,454,181" href="#">
+                        <!-- supplyoffice -->
+                        <area shape="poly" name="coe" coords="416,277,419,266,423,256,420,251,415,249,409,251,407,255,412,263" href="#">
+                        <!-- coe -->
+                        <area shape="poly" name="cba" coords="276,254,281,241,285,234,281,228,276,226,270,228,269,232,273,241" href="#">
+                        <!-- cba -->
+                        <area shape="poly" name="iacet" coords="347,187,351,175,355,166,352,159,347,158,341,160,339,167,343,176" href="#">
+                        <!-- iacet -->
+                        <area shape="poly" name="set" coords="299,322,302,312,306,301,304,296,298,294,293,296,290,301,294,310" href="#">
+                        <!-- set -->
+                </div>
+            </div>
+        </div>
+        <!-- end of content -->
+        <div id="bg_mask">
+            <div id="frontlayer">
+                <img id="hide" src="images/close.png" width="32" height="32" />
+                <div id="selections"></div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2012 &bull; The Mobile IIT Virtual Tour Project &bull;</p>
+        </footer>
+    </body>
+
+</html>

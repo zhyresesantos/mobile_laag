@@ -1,0 +1,254 @@
+wrapper {
+position:relative;
+width:100%;
+overflow:auto;
+}
+
+#scroller {
+position:relative;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+overflow:hidden;
+width:640px;
+background:#fff;
+padding:0;
+}
+
+p {
+display:block;
+width:624px;
+margin-bottom:1em;
+font-size:14px;
+padding:8px;
+}
+
+html,body,div,h1,h2,h3,h4,h5,h6,p,div ul,div li {
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+ol,ul {
+list-style:none;
+}
+
+a {
+text-decoration:none;
+color:#b31a00;
+}
+
+.clear {
+clear:both;
+}
+
+body {
+font-family:Arial, Helvetica, sans-serif;
+background:#f9f9f9;
+}
+
+a:hover {
+color:#2d2d2d;
+}
+
+ul,ol,dl {
+display:block;
+margin:1em 0;
+}
+
+ul,ol {
+padding-left:40px;
+}
+
+ul {
+list-style-type:disc;
+}
+
+header {
+border-bottom:1px solid #ccc;
+}
+
+header,#footer {
+background:#fff;
+}
+
+footer {
+border-top:1px solid ##ddd;
+color:#777;
+font-size:12px;
+padding:10px 20px;
+}
+
+footer p {
+margin:0;
+}
+
+.options {
+float:right;
+}
+
+.options li {
+background-color:#FFF;
+background:url(../images/menu2.png) no-repeat;
+width:60px;
+height:75px;
+display:inline-block;
+cursor:pointer;
+border-left:1px solid #ccc;
+text-indent:-1000em;
+}
+
+.options li.active,.active {
+background-color:#f2f2f2;
+}
+
+.options li:first-child {
+background-position:22px 20px;
+}
+
+.options li:last-child {
+background-position:-17px 20px;
+}
+
+.menu {
+border-top:1px solid #eee;
+background:#f2f2f2;
+z-index:100;
+}
+
+.menu a {
+color:#666;
+font-size:14px;
+font-weight:700;
+line-height:50px;
+display:block;
+padding:0 20px;
+}
+
+.menu a:hover {
+background:#fff;
+color:#6495ED;
+}
+
+.menu li {
+border-bottom:1px solid #ddd;
+}
+
+.menu li:last-child {
+border:none;
+}
+
+polygon {
+fill:transparent;
+stroke-width:2;
+stroke:transparent;
+}
+
+polygon.current {
+fill:#FF4500;
+stroke:#B22222;
+}
+
+polygon.highlight {
+fill:#ADFF2F;
+stroke:green;
+}
+
+line {
+stroke-width:2;
+stroke:transparent;
+}
+
+line.highlight {
+stroke-width:4;
+stroke:blue;
+}
+
+input,select,textarea {
+font-size:.85em;
+outline:none;
+font-family:inherit;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+select,div.styled {
+width:100%;
+border-radius:2px;
+border:solid 1px #ccc;
+padding:.4em;
+}
+
+div.styled,select {
+background:#FFF url(../images/formelements-select.png) no-repeat center right;
+-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2);
+box-shadow:0 1px 3px rgba(0,0,0,0.2);
+}
+
+div.styled {
+overflow:hidden;
+margin:0;
+padding:0;
+}
+
+div.styled select {
+width:115%;
+background-color:transparent;
+background-image:none;
+-webkit-appearance:none;
+border:none;
+box-shadow:none;
+}
+
+input.css-button {
+font-size:20px;
+color:#000;
+text-decoration:none;
+display:block;
+width:100%;
+height: 25px;
+border:1px solid #DDD;
+text-align:center;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+border-radius:5px;
+background:0;
+-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2);
+-webkit-transition:all .4s ease-in-out;
+-moz-transition:all .4s ease-in-out;
+-o-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out;
+}
+
+.msuiit-logo {
+float:left;
+padding:10px 0;
+}
+
+.header h1 {
+font-size:14px;
+color:#C00;
+}
+
+.header h2 {
+font-size:13px;
+color:#494949;
+}
+
+.header h3 {
+font-size:12px;
+}
+
+.header {
+float:left;
+height:75px;
+width:80%;
+display:block;
+background-color:#FFF;
+margin-top:3px;
+}
